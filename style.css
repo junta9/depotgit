@@ -1,0 +1,30 @@
+#homepage {
+    background-image: url("img/agriculture.jpg");
+    min-height: 100vh;
+    width: auto;
+    background-position: center;
+    text-align: center;   
+}
+
+#hmongpage {
+    padding: 20px;
+    margin: 20px;
+    min-height: 100vh;
+    background-position: center;
+    text-align: center;
+
+}
+#text-presentation {
+    background-color: rgba(255, 255, 255, 0.448);
+    font-weight: bolder;
+} 
+
+
+.card-text {
+    font-weight: bolder;
+}
+
+#archive {
+    padding: 10px;
+    align-items: center;
+}
