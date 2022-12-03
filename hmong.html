@@ -9,6 +9,8 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 </head>
 
 <body>
@@ -25,12 +27,12 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Accueil</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="evenements.html">Evenements 2022</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="2019.html">Commémoration 2019</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="hmong.html">Histoire</a>
             </li>
@@ -46,11 +48,11 @@
   <div class="p-3 fw-bolder fs-1 text-center">
     Un peuple millénaire au passé tumultueux
   </div>
-  <main class="container col-lg-6 p-5">
+  <main class="container col-lg-6">
     <div class="row" id="hmongpage">
       <img src="img/hmongguizhou.jpg" class="rounded-5" alt="">
       <br>
-      <p class="fs-5 text-start p-2">Les Hmong/Hmoob sont un peuple d'Asie originaire des régions montagneuses du sud de
+      <p class="fs-3 text-start p-2">Les Hmong/Hmoob sont un peuple d'Asie originaire des régions montagneuses du sud de
         la
         Chine
         (spécialement de la région du Guizhou) au nord du Viêtnam et du Laos. Ils sont aussi appelés Miao, ce
@@ -60,7 +62,7 @@
       <br>
       <img src="img/hmong2.jpg" class="rounded-5" alt="">
       <br>
-      <p class="fs-5 text-start p-2">Les Miao sont le cinquième groupe ethnique en termes de population parmi les 56
+      <p class="fs-3 text-start p-2">Les Miao sont le cinquième groupe ethnique en termes de population parmi les 56
         "nationalités" de
         Chine. Le
         recensement chinois de 1989 a estimé leur nombre à plus de sept millions, et celui de 2000 à près de neuf
@@ -69,7 +71,7 @@
       <br>
       <img src="img/hmong4.jpg" class="rounded-5" alt="">
       <br>
-      <p class="fs-5 text-start p-2">
+      <p class="fs-3 text-start p-2">
         Les Hmong vivant au Laos représentent 7,9 % de la population laotienne, soit environ 438 300 personnes. Ils
         font partie des 49 ethnies recensées par le gouvernement laotien en 1989.
         Aujourd'hui, bien que le peuple hmong soit intégré à la vie laotienne (cf le marché du soir de Luang Prabang ou
@@ -81,7 +83,7 @@
       <br>
       <img src="img/hmong5.jpg" class="rounded-5" alt="">
       <br>
-      <p class="fs-5 text-start p-2">
+      <p class="fs-3 text-start p-2">
         Au cours des dernières décennies, une forte population de Hmong a émigré aux États-Unis, en Australie, en
         Nouvelle-Zélande, au Canada, en Allemagne, au Japon, en Argentine et en France (estimation à 30 000 selon Chô
         LY, 2004), dont environ 2 000 en Guyane. La plus grande partie vit encore en Asie du Sud-Est : Chine, Viêtnam,
@@ -91,9 +93,9 @@
   </main>
   <div>
     <article>
-      <div class="fs-7 p-5">
+      <div class="fs-4 p-5">
         <ul>
-          <p class="fw-bolder fs-5">Dates historique récents:</p>
+          <p class="fw-bolder fs-4">Dates historique récents:</p>
           <li>
             1893: Colonisation du Laos. Le pays devient un protectorat français. Les Hmong sont christianisés par
             les
@@ -146,7 +148,7 @@
         <nav class="container-fluid">
           <div class="d-flex justify-content-center">
             <div>
-              <ul class="navbar-nav">
+              <ul class="d-flex reseau-sociaux">
                 <li class="nav-item">
                   <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                       fill="#fff" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -176,37 +178,38 @@
     </div>
   </footer>
   <div class="modal fade" id="joinModal1" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="joinModalLabel">
-                        Envoyer nous un message
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <label for="name">Nom</label>
-                        <input type="text" class="form-control" id="name" name="name" />
-                        <label for="email">e-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" />
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Fermer
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                        Envoyer le message
-                    </button>
-                </div>
-            </div>
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="joinModalLabel">
+            Envoyer nous un message
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <label for="name">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" />
+            <label for="email">e-mail</label>
+            <input type="email" class="form-control" id="email" name="email" />
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fermer
+          </button>
+          <button type="button" class="btn btn-primary">
+            Envoyer le message
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
+  <script src="like_button.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
